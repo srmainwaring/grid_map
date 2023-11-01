@@ -22,6 +22,9 @@ find_package(OpenCV REQUIRED
   CONFIG
 )
 
+find_package(yaml_cpp_vendor REQUIRED)
+link_directories(${yaml_cpp_vendor_LIBRARY_DIRS})
+
 grid_map_package()
 
 set(dependencies

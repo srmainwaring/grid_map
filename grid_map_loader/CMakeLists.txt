@@ -7,6 +7,9 @@ find_package(grid_map_cmake_helpers REQUIRED)
 find_package(grid_map_msgs REQUIRED)
 find_package(grid_map_ros REQUIRED)
 
+find_package(yaml_cpp_vendor REQUIRED)
+link_directories(${yaml_cpp_vendor_LIBRARY_DIRS})
+
 grid_map_package()
 
 set(dependencies
