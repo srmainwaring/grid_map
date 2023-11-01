@@ -13,6 +13,9 @@ find_package(sensor_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
 
+find_package(yaml_cpp_vendor REQUIRED)
+link_directories(${yaml_cpp_vendor_LIBRARY_DIRS})
+
 grid_map_package()
 
 set(dependencies
